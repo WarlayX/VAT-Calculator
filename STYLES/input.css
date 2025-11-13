@@ -1,0 +1,35 @@
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.input-fields{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.base-amount{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+.vat-rate{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 690px) {
+  .input{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

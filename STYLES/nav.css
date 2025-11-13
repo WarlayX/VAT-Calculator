@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid #bb0404;
+}
+.navbar img{
+  width: 120px;
+  height: 120px;
+}
+.navbar h1{
+  font-weight: lighter;
+}
+.sub-header h3{
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (min-width: 350px) and (max-width: 460px) {
+  .navbar h1{
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,38 @@
+.button-option {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.buttons-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.btn:nth-child(1){
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:nth-child(1):hover {
+  background-color: #12a317;;
+}
+.btn:nth-child(2){
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #ee3838;
+}
+.btn:nth-child(2):hover {
+  background-color: #7e0c0c;
+}

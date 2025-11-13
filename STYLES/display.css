@@ -1,0 +1,21 @@
+.display-all-cal{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.display-all-cal span{
+  font-weight: bold;
+}
+.main-cal{
+  margin-top: 50px;
+}
+
+@media (max-width: 550px) {
+  .display-all-cal{
+    flex-direction: column;
+  }   
+}

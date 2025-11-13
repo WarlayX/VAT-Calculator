@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGES/VAT-2.jpg">
+    <link rel="stylesheet" href="STYLES/main.css"/>
+    <title>VAT Calculator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <img src="IMAGES/VAT-2-r-bg.png" alt="VAT Logo" />
+          <h1>V.A.T Calculator</h1>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-cal">   
+        <section>
+          <div class="sub-header">
+            <h3>Value Added Tax Computation.</h3>
+          </div>
+        </section>
+        <section><!-- Input Section -->
+          <div class="input">
+            <div class="input-fields">
+              <p>Base Amount (&#8358;):</p>
+              <input class="js-base-amount base-amount" onkeydown="if(event.key === 'Enter'){calculateAddVAt();}">
+            </div>
+            <div class="input-fields">
+              <p>VAT Rate (%):</p>
+              <input class="js-vat-rate vat-rate" onkeydown="if(event.key === 'Enter'){calculateAddVAt();}">
+            </div>
+          </div>
+        </section>
+        <section><!-- Buttons Section -->
+          <h5 class="button-option">Choose an option:</h5>
+          <div class="buttons-section">
+            <button class="btn" onclick="calculateAddVAt ();">Add VAT</button>
+            <button class="btn" onclick="calculateRemoveVAT ();">Remove VAT</button>
+          </div>
+        </section>
+        <section><!-- Display section -->
+          <div class="display-all-cal">
+            <p class="js-product-value"></p>
+            <p class="js-vat-value"></p> 
+            <p class="js-vat-cal"></p>
+            <p class="js-display-cal"></p>
+          </div>
+        </section>
+      </div>
+      <section><!-- Vat write section -->
+        <h3 class="what-vat">What is V.A.T?</h3>
+        <div class="write-up">
+          <div class="vat-write-up">     
+            <p>Value Added Tax is a consumption tax paid when goods are purchased and services rendered It is a multi-stage tax. VAT is borne by the final consumer. All goods and services (produced within or imported into the country) are taxable except those specifically exempted by the VAT Act VAT is charged at a rate of 7.5%. Some goods and services such as non-oil exports are zero rated All taxable persons are required to file VAT monthly returns not later than 21st day following the month of transaction.
+            </p>
+          </div>
+          <div class="vat-write-up-2">
+            <p>The more you buy, the more VAT you pay.Hence, VAT is progressive and equitable.Because VAT is collected indirectly, the taxpayers are not aware of the payment. VAT is administered and collected by Federal Inland Revenue Service (FIRS). Merchants collect the tax from consumers and remit to FIRS designated banks and then file returns. The VAT returns filing must be done on the 21st of the month that follows the month of the purchase or sales.
+            </p>
+          </div>
+        </div>
+        <div class="vat-cal-write-up">
+          <h3>How to calculate</h3>
+          <div class="add-remove-cal">
+            <div class="add">
+              <h4>Adding VAT to Net Amount</h4>
+              <p>Simply multiply the net amount by 1 + VAT percentage (i.e. multiply by 1.075 if VAT is 7.5%) and you'll get the gross amount. Or multiply by VAT percentage to get the VAT value.
+              </p>
+            </div>
+            <div class="remove">
+              <h4>Removing VAT from Gross Amount</h4>
+              <p>To calculate VAT having the gross amount you should divide the gross amount by 1 + VAT percentage (i.e. if it is 7.5%, then you should divide by 1.075), then subtract the gross amount, multiply by -1 and round to the closest value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Developed by Adewole  &#169; 2025 | All Rights Reserved</p>
+    </footer>
+    <script src="JAVASCRIPT/vat.js"></script>
+  </body>
+</html>
